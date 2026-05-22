@@ -2,162 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ember",
-  niche: "roofing",
-  name: "Peak Shield Roofing",
-  tagline: "Storm-Ready. Storm-Proof.",
-  phone: "(555) 234-5678",
-  phoneHref: "tel:+15552345678",
-  email: "hello@peakshieldroofing.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Modesto", "Manteca", "Turlock", "Lodi"],
-  license: "CSLB #123987",
-  since: "2005",
-  google_rating: "4.8",
-  review_count: "287",
-  emergency: true,
-  social: {
-    google: "https://google.com",
-    yelp: "https://yelp.com",
-    facebook: "https://facebook.com",
+    name: "Roof Exchange",
+    tagline: "Your Roof, Our Priority.",
+    phone: "(407) 587-0738",
+    phoneHref: "tel:+14075870738",
+    email: "info@roofexchange.com",
+    address: "123 Main St",
+    city: "Kissimmee",
+    serviceAreas: ["Kissimmee", "Orlando", "St. Cloud", "Davenport", "Poinciana"],
+    license: "FL-CGC1526362",
+    since: "2005",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: true,
+    theme: "navy",
+    niche: "roofing",
   },
-},
 
   services: [
-  {
-    icon: "home",
-    title: "Roof Replacement",
-    desc: "Full tear-off and replacement with 30-year architectural shingles. Manufacturer warranty + our 10-year workmanship guarantee.",
-    urgent: false,
-  },
-  {
-    icon: "cloud-lightning",
-    title: "Storm Damage Repair",
-    desc: "Wind, hail, and rain damage repaired fast. We document everything for your insurance claim.",
-    urgent: true,
-  },
-  {
-    icon: "file-text",
-    title: "Insurance Claims",
-    desc: "We work directly with your insurance adjuster. 95% of our storm repairs are fully covered.",
-    urgent: false,
-  },
-  {
-    icon: "shield",
-    title: "Emergency Tarping",
-    desc: "Same-day emergency tarp service. 24/7 response. Protect your home while we schedule full repair.",
-    urgent: true,
-  },
-  {
-    icon: "droplets",
-    title: "Gutter Installation",
-    desc: "Seamless aluminum gutters with leaf guards. Protect your foundation and landscaping.",
-    urgent: false,
-  },
-  {
-    icon: "search",
-    title: "Free Inspections",
-    desc: "Thorough roof inspection with photo report. Know exactly what you have before buying or selling.",
-    urgent: false,
-  },
-],
+    { icon: "home", title: "Roof Installation", desc: "Expert installation of new roofs with durable materials and superior craftsmanship.", urgent: false },
+    { icon: "wrench", title: "Roof Repair", desc: "Fast, reliable repairs for leaks, storm damage, and general wear and tear.", urgent: true },
+    { icon: "shield-check", title: "Storm Damage Restoration", desc: "Specialized restoration services to repair and rebuild roofs after severe weather.", urgent: true },
+    { icon: "hammer", title: "Metal Roofing", desc: "Durable and energy-efficient metal roof installations for long-lasting protection.", urgent: false },
+    { icon: "home", title: "Shingle Roofing", desc: "Classic and versatile shingle roof installations, offering a wide range of styles and colors.", urgent: false },
+    { icon: "droplets", title: "Gutters", desc: "Installation and repair of seamless gutter systems to protect your home from water damage.", urgent: false }
+  ],
 
   testimonials: [
-  {
-    name: "Robert M.",
-    location: "Tracy, CA",
-    stars: 5,
-    text: "Hail storm took out half our roof. Peak Shield had emergency tarps up same day, full replacement done in 3 days. Insurance paid everything.",
-  },
-  {
-    name: "Sarah L.",
-    location: "Stockton, CA",
-    stars: 5,
-    text: "They handled the entire insurance claim for us. Didn't pay a dollar out of pocket. New roof looks better than the original.",
-  },
-  {
-    name: "Tom K.",
-    location: "Manteca, CA",
-    stars: 5,
-    text: "Pre-listing inspection found issues the buyer's inspector would've caught. Fixed it fast, sold for full price. Worth every penny.",
-  },
-],
+    { name: "Sarah L.", location: "Kissimmee", stars: 5, text: "Roof Exchange replaced our entire roof after a bad storm. They were incredibly professional, explained the insurance process clearly, and finished the job in just three days. The crew was respectful, and the new roof looks fantastic. Highly recommend their storm damage expertise!" },
+    { name: "Michael P.", location: "Orlando", stars: 5, text: "We had a persistent leak that other companies couldn't fix. Roof Exchange came out, identified the issue quickly, and completed the repair for a fair price. Their team was friendly and efficient, and we haven't had a single drip since. Truly impressed with their attention to detail." },
+    { name: "Jessica R.", location: "St. Cloud", stars: 5, text: "From the initial free estimate to the final inspection, Roof Exchange made our new metal roof installation a breeze. They offered financing options that fit our budget, and the quality of work is outstanding. Our home feels cooler, and we're confident in its protection for years to come." }
+  ],
 
   trustBadges: [
-  "Licensed & Insured",
-  "Storm Damage Specialists",
-  "Insurance Claim Experts",
-  "GAF Master Elite Contractor",
-  "Lifetime Warranty Available",
-  "Free Inspections",
-],
+    "GAF Master Elite Contractor", "Licensed & Insured", "Certified Storm Restoration", "Financing Available", "Free Estimates", "24/7 Trusted Service"
+  ],
 
   stats: [
-  {
-    "value": 4.8,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1435,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 21,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 1000, label: "Roofs Installed", suffix: "+", decimals: 0 },
+    { value: 18, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI answers every call and text 24/7 — schedules inspections, captures storm-damage leads, and gives estimates before competitors do."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Fast Response", desc: "We prioritize urgent requests and provide prompt service for all your roofing needs." },
+    { icon: "dollar-sign", title: "Upfront Pricing", desc: "Transparent, detailed estimates with no hidden fees, so you know the cost before we start." },
+    { icon: "award", title: "Certified Pros", desc: "Our team consists of highly trained, certified, and experienced roofing specialists." },
+    { icon: "thumbs-up", title: "Satisfaction Guarantee", desc: "We stand by our work and ensure your complete satisfaction with every project." },
+    { icon: "phone", title: "AI Reception 24/7", desc: "Our advanced AI reception is available around the clock to assist you with scheduling and inquiries." },
+    { icon: "truck", title: "Fully Equipped", desc: "Our crews arrive with all the necessary tools and high-quality materials for efficient service." }
+  ],
 
-  formServiceOptions: [
-  "Roof Replacement",
-  "Storm Damage Repair",
-  "Insurance Claims",
-  "Emergency Tarping",
-  "Gutter Installation",
-  "Free Inspections"
-],
+  formServiceOptions: ["Roof Installation", "Roof Repair", "Storm Damage Restoration", "Metal Roofing", "Shingle Roofing", "Gutters"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
